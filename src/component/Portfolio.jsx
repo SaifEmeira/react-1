@@ -20,7 +20,7 @@ export default function Portfolio() {
 
     function showModal(e) {
 
-        image=e.currentTarget.getAttribute("src")
+        image=e.currentTarget;
     console.log(image);
     setOpen(!open)
    
@@ -130,14 +130,14 @@ setOpen3(!open3)
                 <div className={`modal ${open2? "d-block":"d-none"} `}>
                     <div onClick={showModal2} className='overlay'></div>
                     <div className='modal-content flex justify-center w-[50%] '>
-                        <img src="/src/assets/port2.png" className='w-full' alt="" />
+                        <img src="/react-1/assets/port2-BXsgW1Ky.png" className='w-full' alt="" />
                     </div>
                 </div>
 
                 <div className={`modal ${open3? "d-block":"d-none"} `}>
                     <div onClick={showModal3} className='overlay'></div>
                     <div className='modal-content flex justify-center w-[50%] '>
-                        <img src="/src/assets/port3.png" className='w-full' alt="" />
+                        <img src="/react-1/assets/port3-D3FP2wGo.png" className='w-full' alt="" />
                     </div>
                 </div>
 
